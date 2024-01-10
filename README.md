@@ -13,5 +13,3 @@ Easy
 
 ### Objective:
 Capture the flags scattered throughout the challenges to learn and practice cybersecurity techniques.
-
-### Test your skills in searching for hidden directories to find additional flags.
