@@ -1,0 +1,104 @@
+.produtos{
+    width: auto;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.tittle{
+    color: #FFFFFF;
+    font-family: 'Imperial Script';
+    font-size: 70px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.produto{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    border-radius: 60px 14px;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px;
+    width: 300px;
+    height: 450px;
+    background-color: #FFE8D0;
+}
+
+.produto p{
+    text-align: center;
+    align-items: end;
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: auto;
+    color: #000000;
+}
+
+.produto img{
+    
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 60px 14px;
+    max-width: 250px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.produto h2{
+    font-family: 'Julius Sans One';
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.tituloCardapio{
+    text-align: center;
+    font-family: 'Imperial Script';
+    font-size: 120px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    
+    .tituloCardapio{
+        font-size: 80px;
+    }
+    .produto{
+        margin: 20px;
+        width: 350px;
+        
+        height: 400px;
+    }
+    .produto img{
+        width: 200px;
+        height: 200px;
+    }
+    .produto p{
+        font-size: 15px;
+    }
+    .produto h2{
+        font-size: 25px;
+    }
+    .produtos{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    .tittle{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}

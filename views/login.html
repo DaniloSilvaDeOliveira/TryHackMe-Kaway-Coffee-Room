@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="../public/scripts/general.js"></script>
+    <script  src="../public/scripts/admin.js"></script>
+    <link  type="text/css" rel="stylesheet" href="../public/styles/form.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<script>header();</script>
+<div class="form">
+    <form>
+        <center>
+        <label for="">Username</label><br>
+        <input placeholder="enter your username here" type="text" name="username" id="username" required><br>
+        <label for="">Password</label><br>
+        <input placeholder="enter your password here" type="password" name="password" id="password" required><br>
+        <small style="background-color: #A61103 !important; color: #FFE8D0; border-radius: 20px;" id="error">Invalid username or password!</small>
+        <button type="button" onclick="login();">Enter</button>
+        <a style="text-decoration: none;" href="#"><small style="display: block !important">Forgot password</small></a>
+        </center>
+    </form>
+</div>
+<script>footer();</script>
+</body>
+</html>

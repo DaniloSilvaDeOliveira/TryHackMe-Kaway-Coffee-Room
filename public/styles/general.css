@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Imperial+Script&family=Julius+Sans+One&display=swap');
+
+body{
+    margin:0px;
+    background-color: #592816;
+}
+
+.userLogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 10px;
+}
+.userName{
+    margin-right: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: Gelasio;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.logoName{
+    margin: 10px;
+    margin-right: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: Gelasio;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+header a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+header img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+header{
+    align-items: center;
+    width: auto;
+    display:flex;
+    background-position: 10px;
+    background-color: #A61103;
+    color: #fff;
+    padding: 10px;
+}
+
+header button:disabled{
+    background-color: #592816;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    font-family: 'Julius Sans One';
+}	
+
+header button{
+
+    display: flex;
+    align-items: center;
+    background-color: #D97F30;
+    color: #F0F2F5;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    font-family: 'Julius Sans One';
+}
+
+.firstFrame {
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.firstFrame img {
+    /* Ellipse 3 */
+    z-index: -1;
+    position: absolute;
+    display: inline-flex;
+    width: 525.39px;
+    height: 697px;
+    left: -67.89px;
+    top: 22.78px;
+    
+}
+
+.firstFrame div{
+    margin-right: 10%;
+    margin-left: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.firstFrame div h1{
+    font-family: 'Imperial Script', sans-serif;
+    margin: 50px 0px 20px 0px;
+    font-size: 80px;
+    color: #F0F2F5;
+    text-align: center;
+}
+
+.firstFrame div p{
+    display: flex;
+    font-style: normal;
+    font-family: 'Gelasio', serif;
+    margin: 0px 20px 20px 20px;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.secondFrame{
+    background-color: #FFE8D0;
+    margin-top: 10rem;
+    display:flex;
+    justify-content: space-between;
+    padding: 10% 5% 10% 5%;
+    
+
+}
+
+.secondFrame h1{
+    color: #000;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    
+}
+
+.secondFrame p{
+    margin: 0px 50px 0px 50px;
+    justify-content: center;
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondFrame div{
+    padding: 30px;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.secondFrame .firstCol{
+    border:2px;
+    border-style: none solid none  none;
+    border-color: #A61103;
+}
+
+.secondFrame .secondCol{
+    border:2px;
+    border-style: none none none  solid;
+    border-color: #A61103;
+}
+
+.thirdFrame img {
+
+    float: right;
+    display: flex;
+}
+
+.thirdFrame h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.thirdFrame p{
+    width: 50%;
+    margin-inline: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+}
+
+.thirdFrame div{
+    padding: 30px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thirdFrame button{
+    background-color: #592816;
+    border: 1px;
+    color: #FFF;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-style: solid;
+    padding: 10px;
+}
+
+.thirdFrame button:hover{
+    background-color: #FFF;
+    color: #592816;
+    transition-duration: 0.5s;
+}
+
+footer{
+    margin-top: 5rem;
+    background-color: #FFE8D0;
+    display: flex;
+    align-items: center;
+    margin-inline: 60px;
+}
+
+footer div{
+    color: #000;
+    text-align: center;
+    font-family: Gelasio;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+}
+
+footer p{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 svg{
+    margin: 0px 20px 0px 20px;
+}
+
+.footer1 {
+    margin: 0px 40px 0px 20px;
+}
+
+.footer2 {
+    margin: 0px 20px 0px 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .firstFrame img {
+        display: none;
+    }
+    .firstFrame div{
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .firstFrame div h1{
+        font-size: 50px;
+    }
+    .firstFrame div p{
+        
+        font-size: 20px;
+    }
+
+    .secondFrame{
+        margin-top: 5rem;
+        display: block;
+    }
+    .secondFrame h1{
+        margin: 0px;
+        padding: 10px 0px 0px 0px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .secondFrame div{
+        padding: 0px;
+    }
+    .secondFrame p{
+        line-height: 20px;
+        margin: 0px;
+        padding: 10px 0px 0px 0px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .secondFrame .firstCol{
+        border-style: none;
+    }
+    .secondFrame .secondCol{
+        margin-top: 30px;
+        border-style: none;
+    }
+    .thirdFrame img {
+        display: none;
+    }
+    .thirdFrame div{
+        padding: 0px;
+        margin: 20px;
+    }
+
+    .thirdFrame p{
+        width: auto;
+    }
+
+    footer{
+        margin: 0px;
+        padding-top: 10px;
+        margin-inline: 0px;
+        display: block;
+    }
+    .footer2{
+        margin: 0px;
+    }
+    footer p{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+

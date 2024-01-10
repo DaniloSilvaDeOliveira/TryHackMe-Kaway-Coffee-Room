@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="../public/scripts/general.js"></script>
+    <script  src="../public/scripts/portal.js"></script>
+    <link  type="text/css" rel="stylesheet" href="../public/styles/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<script>header();Welcome();</script>
+
+<div class="form">
+    <form>
+        <center>
+            
+            <button id="AdminButton" onclick=AdminPage()>Manage Admins</button>
+            <button id="ProductButton" onclick="ProductsPage()">Manage Products</button>
+            <button id="SystemButton" oncline="SystemPage()">Manage System</button>
+            
+            <button onclick="logout();">Logout</button>
+            
+        </center>
+    </form>
+</div>
+<script>footer();</script>
+</body>
+</html>

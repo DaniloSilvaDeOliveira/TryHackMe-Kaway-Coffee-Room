@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <script src="../public/scripts/menu.js"></script>
+    <script  src="../public/scripts/general.js"></script>
+    <link rel="stylesheet" href="../public/styles/general.css">
+    <link rel="stylesheet" href="../public/styles/cardapio.css">
+    <title>Cardápios</title>
+</head>
+<body>
+    <script>header();</script>
+    <h1 class="tituloCardapio animate__animated animate__fadeIn">Menu</h1>
+    <h1 class="tittle animate__animated animate__fadeIn">Pies</h1><br>
+        <div class="produtos animate__animated animate__fadeIn" id="divTorta">
+            <script>getTortas();</script>
+        </div>
+    <h1 class="tittle animate__animated animate__fadeIn">Cake</h2>
+        <div class="produtos animate__animated animate__fadeIn" id="divBolo">
+            <script>getBolos();</script>
+        </div>
+    <h1 class="tittle animate__animated animate__fadeIn">Drinks</h2>
+        <div class="produtos animate__animated animate__fadeIn" id="divBebida">
+            <script>getBebidas();</script>
+        </div>
+    <script>footer();</script>
+</body>
+</html>
