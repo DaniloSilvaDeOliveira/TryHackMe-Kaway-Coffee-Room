@@ -15,7 +15,7 @@ router.post('/', (req, res) => {
 
     const db = new sqlite.Database('./database.db');
 
-    db.all('SELECT * FROM admin WHERE name = ? AND password = ?', [username, password], (err, rows) => {
+    db.all(`SELECT * FROM admin WHERE name = '${username}' AND password = '${password}'`, (err, rows) => {
         if (err) {
             throw err;
         } else {
@@ -29,8 +29,5 @@ router.get('/portal' , (req, res) => {
     res.sendFile('/views/portal.html', { root: './'});
 });
 
-router.get('/adminManager', (req, res) => {
-    res.sendFile('/views/adminManager.html', { root: './'});
-});
 
 module.exports = router;

@@ -1,0 +1,47 @@
+.system h2 {
+    margin: 10px;
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+.system {
+    background-color: #FFE8D0;
+    border-radius: 15px;
+    border: 1px solid #000;
+    margin: 20rem;
+    padding: 10px;
+
+}
+
+.system button {
+    border-radius: 60px 14px;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #A61103;
+    color: #FFE8D0;
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    width: 200px;
+}
+
+.system input[type=text] {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.system input:focus{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #A61103;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+}

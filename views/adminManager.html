@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="../public/scripts/general.js"></script>
+    <script  src="../public/scripts/adminManager.js"></script>
+    <link  type="text/css" rel="stylesheet" href="../public/styles/form.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<script>header();</script>
+<div class="form">
+    <form>
+        <center>
+            <h1>Add Admin</h1>
+            <label for="">Username</label><br>
+            <input type="text" name="username" id="username" required><br>
+            <label for="">Password</label><br>
+            <input type="text" name="password" id="password" required><br>
+            <label>Super Admin</label><br>
+            <input type="checkbox" name="superAdmin" id="superAdmin"><br>
+            <small style="background-color: #A61103 !important; color: #FFE8D0; border-radius: 20px;" id="error">Invalid username or password!</small>
+            <button type="button" onclick="addAdmin();">Add Admin</button>
+        </center>
+    </form>
+    <br>
+    <form>
+        <center>
+            <h1>Remove Admin</h1>
+            <table id="adminsTable">
+                <tr>
+                    <th>Username</th>
+                    <th>Super Admin</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+            <script>getAdmins();</script>
+        </center>
+    </form>
+</div>
+<script>footer();</script>
+</body>
+</html>

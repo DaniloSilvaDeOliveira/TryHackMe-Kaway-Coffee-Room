@@ -1,4 +1,3 @@
-//cria uma api para o menu para pegar os dados do banco de dados sqlite e retornar em formato json
 const { Router } = require('express');
 const sqlite = require('sqlite3');
 

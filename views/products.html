@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="../public/scripts/general.js"></script>
+    <script  src="../public/scripts/products.js"></script>
+    <link  type="text/css" rel="stylesheet" href="../public/styles/form.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+<script>header();</script>
+<div class="form">
+    <form>
+        <center>
+            <h1>Add Product</h1>
+            <label for="">Name</label><br>
+            <input type="text" name="name" id="name" required><br>
+            <label for="">Price</label><br>
+            <input type="number" name="price" id="price" required><br>
+            <label for="">Description</label><br>
+            <input type="text" name="description" id="description" required><br>
+            <label for="">Image</label><br>
+            <input type="text" placeholder="Image must be a link!" name="image" id="image" required><br>
+            <label for="">Category</label><br>
+            <select name="type" id="type">
+                <option value="Pie">Pie</option>
+                <option value="Cake">Cake</option>
+                <option value="Drink">Drink</option>
+            </select>
+            <button type="button" onclick="addProduct();">Add Product</button>
+        </center>
+    </form>
+    <br>
+    <form>
+        <center>
+            <h1>Remove Product</h1>
+            <table id="productsTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+            <script>getProduct();</script>
+        </center>
+    </form>
+</div>
+<script>footer();</script>
+</body>
+</html>

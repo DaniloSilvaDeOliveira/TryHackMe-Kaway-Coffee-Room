@@ -78,44 +78,16 @@ function constructCards(nome, preco, descricao, img, targetElement) {
     produto.appendChild(imagem);
   
     const precoElemento = document.createElement('p');
-    precoElemento.textContent = `Preço: R$ ${preco}`;
+    precoElemento.textContent = `Price: R$ ${preco}`;
     produto.appendChild(precoElemento);
 
     const br = document.createElement('br');
     produto.appendChild(br);
   
     const descricaoElemento = document.createElement('p');
-    descricaoElemento.textContent = `Descrição: ${descricao}`;
+    descricaoElemento.textContent = `${descricao}`;
     produto.appendChild(descricaoElemento);
   
     targetElement.appendChild(produto);
 
-  }
-
-
-
-
-
-
-
-
-
-
-        //guarda os dados da requisição em uma variável
-        
-        /*const responde = fetch('/cardapio/api');
-        responde.then((resposta) => {
-            //converte a resposta em json
-            const json = resposta.json();
-            json.then((dados) => {
-                //percorre os dados e cria uma div para cada um
-                dados.forEach((item) => {
-                    const div = document.createElement('div');
-                    const p = document.createElement('p');
-                    p.innerHTML = item.preco;
-                    div.innerHTML = item.nome;
-                    document.body.appendChild(div);
-                    document.body.appendChild(p);
-                });
-            });
-        });*/
+}

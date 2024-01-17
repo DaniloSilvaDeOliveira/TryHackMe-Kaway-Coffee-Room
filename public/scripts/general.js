@@ -1,16 +1,30 @@
-//importa o css de generals
+
 const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = '../styles/general.css';
 document.head.appendChild(link);
 
-//importa o css do animate
+
 const animateLink = document.createElement('link');
 animateLink.rel = 'stylesheet';
 animateLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
 document.head.appendChild(animateLink);
 
+if(window.location.pathname == '/manager' || window.location.pathname == '/products' || window.location.pathname == '/system' || window.location.pathname == '/admin/portal'){
+    if(localStorage.getItem('accessToken') === null){
+        window.location.href = "/";
+    }
+}
 
+if(window.location.pathname == '/manager' || window.location.pathname == '/system'){
+    if(localStorage.getItem('accessToken') !== null){
+        const accessToken = localStorage.getItem('accessToken');
+        const decoded = atob(accessToken).split(':');
+        if(decoded[3] == 0){
+            window.location.href = "/admin/portal";
+        }
+    }
+}
 
 
 

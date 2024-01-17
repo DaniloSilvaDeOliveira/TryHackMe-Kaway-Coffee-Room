@@ -1,32 +1,23 @@
 const Express = require('express');
-const dotenv = require('dotenv');
-dotenv.config();
-
-
 
 const app = Express();
-const port = process.env.PORT || 3000;
-//Permite que o express leia o body da requisição no formato JSON
+
 app.use(Express.json());
-//define a pasta public como a pasta de arquivos estáticos
+
 app.use(Express.static('public'));
 
-//Importando as rotas
 const home = require('./routes/home.js');
 const menu = require('./routes/menu.js');
 const admin = require('./routes/admin.js');
+const manager = require('./routes/manager.js');
+const products = require('./routes/products.js');
+const system = require('./routes/system.js');
 
-//Definindo as rotas
 app.use('/', home);
 app.use('/menu', menu);
 app.use('/admin', admin);
+app.use('/manager', manager);
+app.use('/products', products);
+app.use('/system', system);
 
-
-//rota que disponibiliza a pasta public para acesso
 app.use('/public', Express.static('public'));
-
-
-
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
-});

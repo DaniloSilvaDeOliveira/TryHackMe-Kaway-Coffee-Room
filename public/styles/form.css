@@ -57,6 +57,16 @@
     padding: 10px;
 }
 
+.form form input[type=file]{
+    width: 300px;
+    max-width: 100%;
+    padding: 5px;
+    background: #FFE8D0;
+    border-radius: 10px;
+    border: 1px solid #555;
+
+}
+
 .disabled{
     background-color: #FFE8D0;
     color: #A61103;
@@ -88,6 +98,45 @@
     font-family: 'Gelasio', serif;
     font-size: 20px;
 }
+
+form table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+form table tr{
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+
+form table td{
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+
+form table th{
+    background-color: #A61103;
+    color: #FFE8D0;
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+
+form h1 {
+    font-family: 'Imperial Script', serif;
+    font-size: 64px; 
+    margin: 20px 0px 20px 0px;
+}
+
 
 
 
