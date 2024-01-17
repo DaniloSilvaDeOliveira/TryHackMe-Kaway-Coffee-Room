@@ -1,6 +1,7 @@
 const Express = require('express');
 
 const app = Express();
+const port = 8000;
 
 app.use(Express.json());
 
@@ -21,3 +22,8 @@ app.use('/products', products);
 app.use('/system', system);
 
 app.use('/public', Express.static('public'));
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+}
+);
